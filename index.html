@@ -19,11 +19,13 @@
     <header class="navbar">
         <div class="container navbar-content">
             <div class="logo">Dev<span>.emerald</span></div>
+            
             <nav class="nav-links">
-                <a href="#about">Про мене</a>
-                <a href="#skills">Навички</a>
-                <a href="#projects">Проєкти</a>
-                <a href="#contact" class="btn-nav">Контакти</a>
+                <a href="#about" data-i18n="nav-about">Про мене</a>
+                <a href="#skills" data-i18n="nav-skills">Навички</a>
+                <a href="#projects" data-i18n="nav-projects">Проєкти</a>
+                <a href="#contact" class="btn-nav" data-i18n="nav-contact">Контакти</a>
+                <button id="lang-toggle" class="lang-toggle" type="button">EN</button>
             </nav>
         </div>
     </header>
@@ -32,13 +34,15 @@
     <section class="hero" id="about">
         <div class="container hero-content">
             <div class="hero-text">
-                <span class="badge">Доступна для фріланс-проєктів</span>
-                <h1>Створюю адаптивні та <br><span class="text-highlight">живі вебсайти</span></h1>
-                <p>Привіт! Я — Frontend-розробниця з унікальним бекграундом, який навчив мене системності, занурення в деталі та структурування інформації. Маю вищу освіту (диплом бакалавра та магістра).
-                   Мій шлях у розробку почався з бажання створити не просто красиві картинки, а логічні, швидкі та зручні веб-інтерфейси. Багатий досвід роботи з людьми та викладання дають мені чітко розуміти потреби користувачів і зберігати спільну мову з клієнтами. Я не просто пишу код — я аналізую задачу, будую логічні зв’язки та створюю продукт, який вирішує конкретну проблему.І</p>
+                <span class="badge" data-i18n="hero-badge">Доступна для фріланс-проєктів</span>
+                <h1>
+                    <span data-i18n="hero-title-1">Створюю адаптивні та </span><br>
+                    <span class="text-highlight" data-i18n="hero-title-highlight">живі вебсайти</span>
+                </h1>
+                <p data-i18n="hero-text">Привіт! Я — Frontend-розробниця з унікальним бекграундом, який навчив мене системності, занурення в деталі та структурування інформації. Маю вищу освіту (диплом бакалавра та магістра). Мій шлях у розробку почався з бажання створити не просто красиві картинки, а логічні, швидкі та зручні веб-інтерфейси. Багатий досвід роботи з людьми та викладання дають мені чітко розуміти потреби користувачів і зберігати спільну мову з клієнтами. Я не просто пишу код — я аналізую задачу, будую логічні зв’язки та створюю продукт, який вирішує конкретну проблему.</p>
                  <div class="hero-cta">
-                    <a href="#projects" class="btn btn-primary">Дивитись роботи</a>
-                    <a href="#contact" class="btn btn-secondary">Зв'язатися</a>
+                    <a href="#projects" class="btn btn-primary" data-i18n="btn-view-work">Дивитись роботи</a>
+                    <a href="#contact" class="btn btn-secondary" data-i18n="btn-contact-me">Зв'язатися</a>
                 </div>
             </div>
             <div class="hero-visual">
@@ -51,27 +55,27 @@
     <!-- Навички -->
     <section class="skills" id="skills">
         <div class="container">
-            <h2 class="section-title">Стек технологій</h2>
+            <h2 class="section-title" data-i18n="section-skills">Стек технологій</h2>
             <div class="skills-grid">
                 <div class="skill-card">
                     <i class="fa-brands fa-html5"></i>
                     <h3>HTML5 & CSS3</h3>
-                    <p>Адаптивна та семантична верстка, робота з Flexbox/Grid, анімації.</p>
+                    <p data-i18n="skill-html-desc">Адаптивна та семантична верстка, робота з Flexbox/Grid, анімації.</p>
                 </div>
                 <div class="skill-card">
                     <i class="fa-brands fa-js"></i>
                     <h3>JavaScript</h3>
-                    <p>Створення інтерактивних елементів, робота з DOM, логіка інтерфейсу.</p>
+                    <p data-i18n="skill-js-desc">Створення інтерактивних елементів, робота з DOM, логіка інтерфейсу.</p>
                 </div>
                 <div class="skill-card">
                     <i class="fa-solid fa-database"></i>
-                    <h3>Реляційні бази даних (Relational Databases)</h3>
-                    <p>Вивчаю проектування баз даних, розумію принципи зв'язків між таблицями. На даний момент вивчаю SQL та моделювання даних.</p>
+                    <h3 data-i18n="skill-db-title">Реляційні бази даних (Relational Databases)</h3>
+                    <p data-i18n="skill-db-desc">Вивчаю проектування баз даних, розумію принципи зв'язків між таблицями. На даний момент вивчаю SQL та моделювання даних.</p>
                 </div>
                 <div class="skill-card">
                     <i class="fa-brands fa-github"></i>
                     <h3>Git & GitHub</h3>
-                    <p>Контроль версій, менеджмент репозиторіїв та хостинг проєктів.</p>
+                    <p data-i18n="skill-git-desc">Контроль версій, менеджмент репозиторіїв та хостинг проєктів.</p>
                 </div>
             </div>
         </div>
@@ -80,7 +84,7 @@
     <!-- Проєкти -->
     <section class="projects" id="projects">
         <div class="container">
-            <h2 class="section-title">Останні роботи</h2>
+            <h2 class="section-title" data-i18n="section-projects">Останні роботи</h2>
             <div class="projects-grid">
                 <!-- Картка проєкту 1 -->
                 <div class="project-card">
@@ -88,15 +92,15 @@
                         <img src="img/project1.jpg" class="project-img" alt="Скріншот Проєкту 1">
                     </div>
                     <div class="project-info">
-                        <h3>Healthy Baby — Багатосторінковий сайт для батьків</h3>
-                        <p>Комплексний багатосторінковий веб-сайт, присвячений темі дитячого прикорму та здоров'я. Головною технічною особливістю проєкту є інтерактивний <span>«Персональний календар щеплень»</span>. Скрипт на JavaScript автоматично змінює дату народження дитини, прораховує точний графік вакцинації відповідно до офіційних рекомендацій МОЗ та динамічно виводить структуровану таблицю з даними. Сайт має повну адаптивність для зручного користування зі смартфонів.</p>
+                        <h3 data-i18n="project-1-title">Healthy Baby — Багатосторінковий сайт для батьків</h3>
+                        <p data-i18n="project-1-desc">Комплексний багатосторінковий веб-сайт, присвячений темі дитячого прикорму та здоров'я. Головною технічною особливістю проєкту є інтерактивний <span>«Персональний календар щеплень»</span>. Скрипт на JavaScript автоматично змінює дату народження дитини, прораховує точний графік вакцинації відповідно до офіційних рекомендацій МОЗ та динамічно виводить структуровану таблицю з даними. Сайт має повну адаптивність для зручного користування зі смартфонів.</p>
                         <div class="project-tags">
                             <span>HTML5</span>
                             <span>CSS3</span>
                             <span>JavaScript</span>
-                            <span>Адаптивний дизайн</span>
+                            <span data-i18n="project-1-tag-responsive">Адаптивний дизайн</span>
                         </div>
-                        <a href="https://angelinacherry74-code.github.io/baby-food/" class="project-link">Дивитись на GitHub <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="https://angelinacherry74-code.github.io/baby-food/" class="project-link"><span data-i18n="project-1-link">Дивитись на GitHub</span> <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <!-- Картка проєкту 2 -->
@@ -105,15 +109,15 @@
                         <span><img src="img/project2.jpg" class="project-img" alt="Скріншот Проєкту 2"></span>
                     </div>
                     <div class="project-info">
-                        <h3>Latte Planner — Цифровий блокнот для щоденних планів</h3>
-                        <p>Елегантний та мінімалістичний Progressive Web App (PWA) застосунок для планування дня та ведення нотаток. Реалізовані інтерактивні вкладки («Плани», «Нотатки», «Трекер», «Ідеї») за допомогою чистого JavaScript без перезавантаження сторінок. Об’єкт має локальну базу даних: завдяки інтеграції з LocalStorage , усі введені користувачем дані автоматично зберігаються в браузері й не зникають. навіть після перезавантаження сторінки чи закриття вкладки.</p>
+                        <h3 data-i18n="project-2-title">Latte Planner — Цифровий блокнот для щоденних планів</h3>
+                        <p data-i18n="project-2-desc">Елегантний та мінімалістичний Progressive Web App (PWA) застосунок для планування дня та ведення нотаток. Реалізовані інтерактивні вкладки («Плани», «Нотатки», «Трекер», «Ідеї») за допомогою чистого JavaScript без перезавантаження сторінок. Об’єкт має локальну базу даних: завдяки інтеграції з LocalStorage, усі введені користувачем дані автоматично зберігаються в браузері й не зникають навіть після перезавантаження сторінки чи закриття вкладки.</p>
                         <div class="project-tags">
                             <span>JavaScript(DOM, LocalStorage)</span>
                             <span>PWA</span>
                             <span>CSS3</span>
                             <span>HTML5</span>
                         </div>
-                        <a href="https://angelinacherry74-code.github.io/latte-planner/" class="project-link">Дивитись на GitHub <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="https://angelinacherry74-code.github.io/latte-planner/" class="project-link"><span data-i18n="project-2-link">Дивитись на GitHub</span> <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <!-- Картка проєкту 3 -->
@@ -122,15 +126,15 @@
                         <span><img src="img/project3.jpg" class="project-img" alt="Скріншот Проєкту 3"></span>
                     </div>
                     <div class="project-info">
-                        <h3>ЮліяDigital — Лендінг для продажу цифрових товарів</h3>
-                        <p>Професійний односторінковий комерційний сайт (Landing Page), розроблений для презентації та авторських цифрових стікерів. Особлива увага приділена сучасна UI/UX-структура: реалізовано чіткі акцентні кнопки виклику до дії, інтерактивні картки, переваги та оптимізовану типографіку для максимальної конверсії. Верстка виконана з урахуванням адаптивності, забезпечуючи швидке завантаження та ідеальне відображення на мобільних пристроях, що є критичним місцем для комерційних проектів.</p>
+                        <h3 data-i18n="project-3-title">ЮліяDigital — Лендінг для продажу цифрових товарів</h3>
+                        <p data-i18n="project-3-desc">Професійний односторінковий комерційний сайт (Landing Page), розроблений для презентації та авторських цифрових стікерів. Особлива увага приділена сучасній UI/UX-структурі: реалізовано чіткі акцентні кнопки виклику до дії, інтерактивні картки, переваги та оптимізовану типографіку для максимальної конверсії. Верстка виконана з урахуванням адаптивності, забезпечуючи швидке завантаження та ідеальне відображення на мобільних пристроях, що є критичним місцем для комерційних проектів.</p>
                         <div class="project-tags">
                             <span>UI/UX Design</span>
                             <span>HTML5</span>
                             <span>CSS3 Flexbox</span>
-                            <span>Адаптивна верстка</span>
+                            <span data-i18n="project-3-tag-adaptive">Адаптивна верстка</span>
                         </div>
-                        <a href="https://angelinacherry74-code.github.io/lending/" class="project-link">Дивитись на GitHub <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="https://angelinacherry74-code.github.io/lending/" class="project-link"><span data-i18n="project-3-link">Дивитись на GitHub</span> <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -140,12 +144,12 @@
     <!-- Зворотній зв'язок -->
     <section class="contact" id="contact">
         <div class="container contact-box">
-            <h2>Маєте цікавий проєкт?</h2>
-            <p>Я завжди відкрита до нових задач, розробки сайтів під ключ або співпраці. Напишіть мені, і ми обговоримо деталі!</p>
+            <h2 data-i18n="contact-title">Маєте цікавий проєкт?</h2>
+            <p data-i18n="contact-text">Я завжди відкрита до нових задач, розробки сайтів під ключ або співпраці. Напишіть мені, і ми обговоримо деталі!</p>
             <div class="contact-links">
                 <a href="https://t.me/Foxymaddened" target="_blank" class="contact-item">
-        <i class="fa-brands fa-telegram"></i> Telegram
-    </a>
+                    <i class="fa-brands fa-telegram"></i> Telegram
+                </a>
                 <a href="https://github.com/angelinacherry74-code" target="_blank" class="contact-item"><i class="fa-brands fa-github"></i> GitHub</a>
             </div>
         </div>
@@ -154,9 +158,11 @@
     <!-- Футер -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Dev.emerald. Усі права захищені.</p>
+            <p data-i18n="footer-copy">© 2026 Dev.emerald. Усі права захищені.</p>
         </div>
     </footer>
-
+<script src="translations.js"></script>
+    
+    <script src="script.js"></script>
 </body>
 </html>

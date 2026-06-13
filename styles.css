@@ -46,16 +46,28 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 70px;
-}
-
-.logo {
-    font-size: 1.4rem;
-    font-weight: 700;
+    gap: 20px;
     letter-spacing: 0.5px;
 }
 
 .logo span {
     color: var(--primary);
+}
+
+.lang-toggle {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: var(--white);
+    padding: 8px 16px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    font-weight: 600;
+}
+
+.lang-toggle:hover {
+    background-color: rgba(15, 159, 104, 0.18);
+    border-color: var(--primary);
 }
 
 .nav-links a {
